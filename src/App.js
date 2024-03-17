@@ -55,7 +55,22 @@ export default function Board() {
     status = 'Winner : ' + winner;
   }
   else{
-    status = "Next Player: " + (XisNext?'X':'O');
+    var k = 0;
+    for(let i = 0; i < squares.length; i++)
+    {
+      if(squares[i]==null)
+      {
+        status = "Next Player: " + (XisNext?'X':'O');
+        k = 1;
+        break;
+      }
+    }
+    if(k==0)
+    {
+      status = "Match Draw";
+    }
+
+    
   }
   return (
   <div className='main'>
