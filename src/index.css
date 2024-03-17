@@ -74,11 +74,14 @@ body {
 
 @media only screen and (max-width: 600px) {
   .main{
-    margin-left: -15%;
+    margin-left: -12%;
     margin-top: 25%;
   }
   .head{
     margin-left: 22%;
+  }
+  .resetbtn{
+    margin-left: 39%;
   }
 
 }
